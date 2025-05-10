@@ -6,7 +6,7 @@ const NewsBord = ({category}) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=d5f8a0c52a014fc0b9436f8b51090f9f`;
+      let url = `https://gnews.io/api/v4/top-headlines?category=${category}&apikey=da0d5a945587225f3d83976f8c3f797a`;
 
       let response = await fetch(url);
       let data = await response.json();
@@ -26,7 +26,7 @@ const NewsBord = ({category}) => {
           key={index}
           title={news.title}
           description={news.description}
-          img={news.urlToImage}
+          img={news.image}
           url={news.url}
           content={news.content}
         />

@@ -2,7 +2,7 @@ import React from 'react';
 
 const NewsItem = ({ title, description, url, img, content }) => {
   return (
-    <div className="card flex flex-col flex-1 min-w-[250px] overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 m-2 p-0 bg-white rounded-2xl border border-gray-200">
+    <div className="card flex flex-col flex-1 min-w-[250px] overflow-hidden shadow-lg hover:shadow-xl  m-2 p-0 bg-white rounded-2xl border border-gray-200">
       <div className="relative h-48 w-full overflow-hidden rounded-t-2xl">
         <img
           className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
